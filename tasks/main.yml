@@ -1,0 +1,22 @@
+---
+- name: Set php_executable variable to a default if not defined.
+  set_fact:
+    php_executable: php
+  when: php_executable is not defined
+
+- name: Check if phpunit is installed.
+  stat: "path={{ phpunit_path }}"
+  register: phpunit_bin
+
+- name: Download phpunit installer.
+  get_url:
+    url: https://phar.phpunit.de/phpunit-6.1.phar
+    dest: /tmp/phpunit.phar
+    mode: 0755
+  when: not phpunit_bin.stat.exists
+
+- name: Move phpunit into globally-accessible location.
+  shell: >
+    mv /tmp/phpunit.phar {{ phpunit_path }}
+    creates={{ phpunit_path }}
+  when: not phpunit_bin.stat.exists
