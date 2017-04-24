@@ -4,7 +4,7 @@
 
 Installs phpunit, the PHP Dependency Manager, on any Linux or UNIX system.
 
-Heavily inspired of [ansible-role-composer](https://github.com/geerlinguy/ansible-role-composer.git) by Jeff Geerling 
+Heavily inspired of [ansible-role-composer](https://github.com/geerlingguy/ansible-role-composer) by Jeff Geerling 
 
 ## Requirements
 
