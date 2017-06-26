@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/oktapodia/ansible-role-phpunit.svg?branch=master)](https://travis-ci.org/oktapodia/ansible-role-phpunit)
 
-Installs phpunit, the PHP Dependency Manager, on any Linux or UNIX system.
+Installs phpunit, the PHP Unit Test framework, on any Linux or UNIX system.
 
 Heavily inspired of [ansible-role-composer](https://github.com/geerlingguy/ansible-role-composer) by Jeff Geerling 
 
