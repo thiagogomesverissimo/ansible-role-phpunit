@@ -10,7 +10,7 @@
 
 - name: Download phpunit installer.
   get_url:
-    url: https://phar.phpunit.de/phpunit-6.1.phar
+    url: "{{ phpunit_url }}"
     dest: /tmp/phpunit.phar
     mode: 0755
   when: not phpunit_bin.stat.exists
