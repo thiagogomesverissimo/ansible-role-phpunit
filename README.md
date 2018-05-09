@@ -42,3 +42,4 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2017 by [Sebastien BRAMILLE](https://sebastien-bramille.com/).
+
